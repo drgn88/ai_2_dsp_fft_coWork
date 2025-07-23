@@ -1,0 +1,2 @@
+./shift_reg.sv
+./tb_shift_reg.sv
