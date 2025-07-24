@@ -11,16 +11,16 @@ module BF2I #(
     input signed [WIDTH-1:0] din_R2[DEPTH-1:0], 
     input signed [WIDTH-1:0] din_Q1[DEPTH-1:0],
     input signed [WIDTH-1:0] din_Q2[DEPTH-1:0],
-    output logic signed [WIDTH-1:0] dout_R_add[DEPTH-1:0],
-    output logic signed [WIDTH-1:0] dout_R_sub[DEPTH-1:0],
-    output logic signed [WIDTH-1:0] dout_Q_add[DEPTH-1:0], 
-    output logic signed [WIDTH-1:0] dout_Q_sub[DEPTH-1:0] 
+    output logic signed [WIDTH:0] dout_R_add[DEPTH-1:0],
+    output logic signed [WIDTH:0] dout_R_sub[DEPTH-1:0],
+    output logic signed [WIDTH:0] dout_Q_add[DEPTH-1:0], 
+    output logic signed [WIDTH:0] dout_Q_sub[DEPTH-1:0] 
 );
 
-logic signed [WIDTH-1:0] add_R [DEPTH-1:0];
-logic signed [WIDTH-1:0] add_Q [DEPTH-1:0];
-logic signed [WIDTH-1:0] sub_R [DEPTH-1:0];
-logic signed [WIDTH-1:0] sub_Q [DEPTH-1:0];
+logic signed [WIDTH:0] add_R [DEPTH-1:0];
+logic signed [WIDTH:0] add_Q [DEPTH-1:0];
+logic signed [WIDTH:0] sub_R [DEPTH-1:0];
+logic signed [WIDTH:0] sub_Q [DEPTH-1:0];
 integer i;
 
 always @(posedge clk or negedge rst_n) begin

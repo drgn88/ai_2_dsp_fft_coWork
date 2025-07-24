@@ -1,0 +1,8 @@
+./BF2I.sv
+./cnt_5b.sv
+./ctrl_mod0_fac8_0.sv
+./cu_mod0_0.sv
+./mod0_0.sv
+./mul_fac8_0.sv
+./shift_reg.sv
+./tb_dut.sv
