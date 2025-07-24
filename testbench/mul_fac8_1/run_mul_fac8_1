@@ -1,2 +1,0 @@
- vcs -full64 -sverilog -debug_access+all -kdb -f mul_fac8_1_filelist
- ./simv -verdi &
