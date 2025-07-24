@@ -31,7 +31,7 @@ always @(posedge clk or negedge rst_n) begin
     end else begin
         if (en) begin
             for(i=0; i<DEPTH; i=i+1) begin
-                // Change Real & Imaginary
+                // Change Real & Imaginary(sub)
                 dout_R_sub[i] <= din_Q_sub[i];
                 dout_Q_sub[i] <= -(din_R_sub[i]);
 
