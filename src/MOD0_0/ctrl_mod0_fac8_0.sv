@@ -7,7 +7,8 @@ module ctrl_mod0_fac8_0 #(
 	input rstn,
 	input en,
 
-	output logic valid_fac8_0
+	output logic valid_fac8_0,
+	output logic alert_mod01
 );
 
 	logic [CNT_WIDTH-1:0] cnt;
@@ -49,14 +50,17 @@ module ctrl_mod0_fac8_0 #(
 			valid_fac8_0 <= 0;
 			cnt <= 0;
 			cnt_flag <= 0;
+			alert_mod01 <= 0;
 		end
 		else begin
 			if(en && !(cnt_flag)) begin
 				cnt_flag <= 1;
 				valid_fac8_0 <=0;
 				cnt <= 0;
+				alert_mod01 <= 1;
 			end
 			else if (cnt_flag) begin
+				alert_mod01 <= 0;
 				if(cnt == 15) begin
 					valid_fac8_0 <= 0;
 					cnt_flag <= 0;

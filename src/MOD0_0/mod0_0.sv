@@ -12,7 +12,9 @@ module mod0_0 #(
 	output logic signed [DATA_WIDTH:0] dout_R_add_00 [0:NUM_IN_OUT-1],
 	output logic signed [DATA_WIDTH:0] dout_R_sub_00 [0:NUM_IN_OUT-1],
 	output logic signed [DATA_WIDTH:0] dout_Q_add_00 [0:NUM_IN_OUT-1],
-	output logic signed [DATA_WIDTH:0] dout_Q_sub_00 [0:NUM_IN_OUT-1]
+	output logic signed [DATA_WIDTH:0] dout_Q_sub_00 [0:NUM_IN_OUT-1],
+
+	output logic alert_mod01
 );
 
 	logic w_bf_en;
@@ -31,7 +33,8 @@ module mod0_0 #(
 	.rstn(rstn),
 	
 	.bf_en(w_bf_en),
-	.valid_fac8_0(w_valid_fac8_0)
+	.valid_fac8_0(w_valid_fac8_0),
+	.alert_mod01(alert_mod01)
 	);
 
 	//256 shift register
