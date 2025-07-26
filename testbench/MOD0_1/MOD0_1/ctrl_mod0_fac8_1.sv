@@ -54,14 +54,16 @@ module ctrl_mod0_fac8_1(
 
 		case (state)
 			IDLE : begin
-				alert_next = 0;
+				//alert_next = 0;
 				if(en) begin
 					next_state = MUL_13;
 					en_mul_next = 1;
 					sel_next = 0;
+					alert_next = 1;
 				end
 			end 
 			MUL_13 : begin
+				alert_next = 0;
 				cnt_reg_next = cnt_reg + 1;
 				if(cnt_reg == 3) begin
 					next_state = MUL_24;
@@ -80,9 +82,11 @@ module ctrl_mod0_fac8_1(
 					next_state = MUL_57;
 					en_mul_next = 1;
 					sel_next = 2;
+					alert_next = 1;
 				end
 			end
 			MUL_57 : begin
+				alert_next = 0;
 				cnt_reg_next = cnt_reg + 1;
 				if(cnt_reg == 3) begin
 					next_state = MUL_68;
@@ -94,7 +98,7 @@ module ctrl_mod0_fac8_1(
 				if(cnt_reg == 3) begin
 					next_state = IDLE;
 					en_mul_next = 0;
-					alert_next = 1;
+					//alert_next = 1;
 				end
 			end
 		endcase
