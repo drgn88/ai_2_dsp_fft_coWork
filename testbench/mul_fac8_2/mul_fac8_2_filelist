@@ -1,0 +1,3 @@
+./mul_fac8_2.sv
+./rom_twf_gen.sv
+./tb_mul_fac8_2.sv
