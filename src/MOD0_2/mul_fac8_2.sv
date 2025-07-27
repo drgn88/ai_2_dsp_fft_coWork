@@ -60,7 +60,8 @@ module mul_fac8_2 #(
                 .OFFSET(64)
             ) U_TWF_GEN (
                 // .clk(clk),
-                .addr(addr + j),
+                //.addr(addr + j),
+                .addr(addr + (DEPTH - 1 - j)),
                 .en(en),
                 .twiddle_fac_R_add(twiddle_fac_R_add[j]),
                 .twiddle_fac_Q_add(twiddle_fac_Q_add[j]),

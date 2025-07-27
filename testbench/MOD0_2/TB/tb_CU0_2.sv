@@ -1153,6 +1153,24 @@ module tb_dut();
         .alert_mod02(alert_mod02)
     );
 
+    wire bf_en02;
+    wire mux_sel02;
+    wire [8:0] addr;
+    wire mul_en;
+    wire alert_CBFP;
+
+    cu_mod0_2 DUT_CU02(
+	.clk(clk),
+	.rstn(rstn),
+	.alert_mod02(alert_mod02),
+
+    .bf_en02(bf_en02),
+	.mux_sel02(mux_sel02),
+	.addr(addr),
+	.mul_en(mul_en),
+	.alert_CBFP(alert_CBFP)
+    );
+
     // 클럭 생성
     initial begin
         clk = 0;
