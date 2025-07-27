@@ -1,0 +1,3 @@
+vcs -full64 -sverilog -debug_access+all -kdb -f cbfp_shift_reg_filelist
+./simv -verdi &
+
