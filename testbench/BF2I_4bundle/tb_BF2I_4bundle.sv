@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module BF2I_8bundle_tb;
+module BF2I_4bundle_tb;
 
     // DUT (Device Under Test)의 파라미터와 동일하게 선언
     parameter WIDTH  = 9;
@@ -24,7 +24,7 @@ module BF2I_8bundle_tb;
     end
 
     // DUT 인스턴스화
-    BF2I_8bundle #(
+    BF2I_4bundle #(
         .WIDTH(WIDTH),
         .DEPTH(DEPTH),
         .OFFSET(OFFSET)
@@ -49,7 +49,7 @@ module BF2I_8bundle_tb;
         end
 
         $display("------------------------------------------------------------------");
-        $display("                 BF2I_8bundle Testbench Started                   ");
+        $display("                 BF2I_4bundle Testbench Started                   ");
         $display("------------------------------------------------------------------");
 
         @(posedge clk);
@@ -162,7 +162,7 @@ module BF2I_8bundle_tb;
         // End simulation
         @(posedge clk);
         $display("\n------------------------------------------------------------------");
-        $display("                 BF2I_8bundle Testbench Finished                  ");
+        $display("                 BF2I_4bundle Testbench Finished                  ");
         $display("------------------------------------------------------------------");
         $finish;
     end
