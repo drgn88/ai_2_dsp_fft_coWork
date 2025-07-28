@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module BF2I_8bundle #(
+module BF2I_4bundle #(
     parameter WIDTH  = 9,
     parameter DEPTH  = 16,
     parameter OFFSET = 4
