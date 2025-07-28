@@ -1,9 +1,9 @@
 `timescale 1ns/1ps
 
-module mux_sel_ctrl_02 (
+module ctrl_mux_shift_reg (
 	input clk,
 	input rstn,
-	input alert_mod02,
+	input alert_mod01,
 
 	output logic mux_sel
 );
@@ -13,7 +13,7 @@ module mux_sel_ctrl_02 (
 	localparam SUB_SEL = 2;
 
 	logic [1:0] state, next_state;
-	logic [3:0] cnt_reg, cnt_next;
+	logic [4:0] cnt_reg, cnt_next;
 	logic mux_sel_reg, mux_sel_next;
 
 	//Output Logic
@@ -40,32 +40,27 @@ module mux_sel_ctrl_02 (
 		mux_sel_next = mux_sel_reg;
 		case (state)
 		IDLE : begin
-			if(alert_mod02) begin
+			if(alert_mod01) begin
 				next_state = ADD_SEL;
 				mux_sel_next = 0;
 			end
 		end 
 		ADD_SEL : begin
 			cnt_next = cnt_reg + 1;
-			if(cnt_reg == 7) begin
+			if(cnt_reg == 15) begin
 				next_state = SUB_SEL;
 				mux_sel_next = 1;
 			end
 		end
 		SUB_SEL : begin
 			cnt_next = cnt_reg + 1;
-			if(cnt_reg == 15) begin
-				if(alert_mod02) begin	
-					next_state = ADD_SEL;
-					mux_sel_next = 0;
-				end
-				else begin
-					next_state = IDLE;
-					mux_sel_next = 0;
-				end
+			if(cnt_reg == 31) begin
+				next_state = IDLE;
+				mux_sel_next = 0;
 			end
 		end
 		endcase
 	end
+	
 
 endmodule
