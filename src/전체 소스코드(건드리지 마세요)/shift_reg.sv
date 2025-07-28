@@ -16,8 +16,8 @@ module shift_reg #(
 
 	integer i, j, k;
 
-	logic [DATA_WIDTH-1:0] shift_reg_i [0:NUM_IN_OUT-1][0:REG_DEPTH-1];
-	logic [DATA_WIDTH-1:0] shift_reg_q [0:NUM_IN_OUT-1][0:REG_DEPTH-1];
+	logic signed [DATA_WIDTH-1:0] shift_reg_i [0:NUM_IN_OUT-1][0:REG_DEPTH-1];
+	logic signed [DATA_WIDTH-1:0] shift_reg_q [0:NUM_IN_OUT-1][0:REG_DEPTH-1];
 
 	always_ff @( posedge clk or negedge rstn ) begin : shift_operate
 		if(!rstn) begin

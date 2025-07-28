@@ -14,7 +14,7 @@ module mux_32_to_16 #(
 	output logic signed [DATA_WIDTH-1:0] din_Q_01 [0:15]
 );
 	
-	always_comb begin : sel_shift_reg_in
+	always_comb begin : sel_reg_in
 		case (mux_sel)
 			1'b0 : begin
 				din_R_01 = din_R_add00;

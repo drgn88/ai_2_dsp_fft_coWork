@@ -6,17 +6,17 @@ module shift_reg_cbfp #(
 ) (
 	input clk,
 	input rstn,
-	input logic signed [DATA_WIDTH - 1:0] din_i,
-	input logic signed [DATA_WIDTH - 1:0] din_q,
+	input logic [DATA_WIDTH - 1:0] din_i,
+	input logic [DATA_WIDTH - 1:0] din_q,
 
-	output logic signed [DATA_WIDTH - 1:0] dout_i [0:REG_DEPTH-1],
-	output logic signed [DATA_WIDTH - 1:0] dout_q [0:REG_DEPTH-1]
+	output logic [DATA_WIDTH - 1:0] dout_i [0:REG_DEPTH-1],
+	output logic [DATA_WIDTH - 1:0] dout_q [0:REG_DEPTH-1]
 );
 
 	integer j;
 
-	logic signed [DATA_WIDTH-1:0] shift_reg_i [0:REG_DEPTH-1];
-	logic signed [DATA_WIDTH-1:0] shift_reg_q [0:REG_DEPTH-1];
+	logic [DATA_WIDTH-1:0] shift_reg_i [0:REG_DEPTH-1];
+	logic [DATA_WIDTH-1:0] shift_reg_q [0:REG_DEPTH-1];
 
 	always_ff @( posedge clk or negedge rstn ) begin : shift_operate
 		if(!rstn) begin

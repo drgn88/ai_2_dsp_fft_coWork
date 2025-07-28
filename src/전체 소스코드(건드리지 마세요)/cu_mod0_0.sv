@@ -66,7 +66,7 @@ module cu_mod0_0 (
 
 	cnt_5b U_CNT_5B(
 	.clk(clk),
-	.rstn(rstn),
+	.rstn(rstn | valid),
 	.valid(valid),
 	
 	.cnt_ctrl(w_cnt_ctrl)
