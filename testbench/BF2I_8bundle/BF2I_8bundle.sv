@@ -39,5 +39,5 @@ module BF2I_8bundle #(
 
     assign dout_R = reg_dout_R;
     assign dout_Q = reg_dout_Q;
-
+    
 endmodule
