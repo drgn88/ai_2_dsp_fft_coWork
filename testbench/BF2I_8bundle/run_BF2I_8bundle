@@ -1,3 +1,0 @@
-vcs -full64 -sverilog -debug_access+all -kdb -f BF2I_8bundle_filelist
-./simv -verdi &
-
