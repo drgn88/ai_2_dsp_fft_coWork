@@ -14,20 +14,11 @@ module BF2I_8bundle #(
     output logic signed [WIDTH:0] dout_Q[DEPTH-1:0]
 );
 
-    // logic signed [WIDTH:0] add_R[DEPTH-OFFSET-1:0];
-    // logic signed [WIDTH:0] add_Q[DEPTH-OFFSET-1:0];
-    // logic signed [WIDTH:0] sub_R[DEPTH-OFFSET-1:0];
-    // logic signed [WIDTH:0] sub_Q[DEPTH-OFFSET-1:0];
-
     integer i;
 
     always @(posedge clk or negedge rst_n) begin
         if (~rst_n) begin
             for (i = 0; i < DEPTH; i = i + 1) begin
-                // add_R[i] <= 0;
-                // add_Q[i] <= 0;
-                // sub_R[i] <= 0;
-                // sub_Q[i] <= 0;
                 dout_R[i] <= 0;
                 dout_Q[i] <= 0;
             end
@@ -42,8 +33,5 @@ module BF2I_8bundle #(
             end
         end
     end
-
-    // assign dout_R = add_R;
-    // assign dout_Q = sub_R;
 
 endmodule
