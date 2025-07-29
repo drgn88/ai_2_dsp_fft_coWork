@@ -1,2 +1,0 @@
-vcs -kdb -full64 -sverilog -f cbfp1_filelist -debug_all -o simv
-./simv -verdi &

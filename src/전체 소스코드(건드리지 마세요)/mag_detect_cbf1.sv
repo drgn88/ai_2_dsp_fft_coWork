@@ -3,21 +3,21 @@ module mag_detect_cbfp1 (
     input rstn,
     input en,
 
-    input logic signed [24:0] mag_in_R_add[0:7],
-    input logic signed [24:0] mag_in_Q_add[0:7],
-    input logic signed [24:0] mag_in_R_sub[0:7],
-    input logic signed [24:0] mag_in_Q_sub[0:7],
+    input logic signed [24:0] mag_in_R_add[7:0],
+    input logic signed [24:0] mag_in_Q_add[7:0],
+    input logic signed [24:0] mag_in_R_sub[7:0],
+    input logic signed [24:0] mag_in_Q_sub[7:0],
 
-    output logic [4:0] mag_out_R_add[0:7],
-    output logic [4:0] mag_out_Q_add[0:7],
-    output logic [4:0] mag_out_R_sub[0:7],
-    output logic [4:0] mag_out_Q_sub[0:7]
+    output logic [4:0] mag_out_R_add[7:0],
+    output logic [4:0] mag_out_Q_add[7:0],
+    output logic [4:0] mag_out_R_sub[7:0],
+    output logic [4:0] mag_out_Q_sub[7:0]
 );
 
-    logic [4:0] mag_out_R_add_reg[0:7];
-    logic [4:0] mag_out_Q_add_reg[0:7];
-    logic [4:0] mag_out_R_sub_reg[0:7];
-    logic [4:0] mag_out_Q_sub_reg[0:7];
+    logic [4:0] mag_out_R_add_reg[7:0];
+    logic [4:0] mag_out_Q_add_reg[7:0];
+    logic [4:0] mag_out_R_sub_reg[7:0];
+    logic [4:0] mag_out_Q_sub_reg[7:0];
 
     integer j;
 
