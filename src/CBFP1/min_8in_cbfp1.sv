@@ -13,7 +13,7 @@ module min_8in_cbfp1 #(
 	// 1nd Stage: 비교기 4개
 	genvar i;
 
-	logic [LZC_WIDTH:0] out_min_1st [0:3];
+	logic [LZC_WIDTH-1:0] out_min_1st [0:3];
 
 	generate
 		for(i = 0; i < 4; i = i + 1) begin : first_stage_compare
@@ -29,7 +29,7 @@ module min_8in_cbfp1 #(
 	// 2nd Stage: 비교기 2개
 	genvar j;
 
-	logic [LZC_WIDTH:0] out_min_2nd [0:1];
+	logic [LZC_WIDTH-1:0] out_min_2nd [0:1];
 
 	generate
 		for(j = 0; j < 2; j = j + 1) begin : second_stage_compare
@@ -45,7 +45,7 @@ module min_8in_cbfp1 #(
 	//Pipe Register
 	integer k;
 
-	logic [4:0] out_min_2nd_reg [0:1];
+	logic [LZC_WIDTH-1:0] out_min_2nd_reg [0:1];
 
 	always_ff @( posedge clk or negedge rstn ) begin : pipe_reg
 		if(!rstn) begin
@@ -62,14 +62,14 @@ module min_8in_cbfp1 #(
 
 
 	// 3rd stage: 비교기 1개
-	logic [4:0] out_min_3rd;
+	logic [LZC_WIDTH-1:0] out_min_3rd;
 
 	min_2in #(.LZC_WIDTH(5))
 	U_3rd_stage(
 	.min_in1(out_min_2nd_reg[0]),
 	.min_in2(out_min_2nd_reg[1]),
 
-	.min_out(out_min_3rd[0])
+	.min_out(out_min_3rd)
 	);
 
 	assign min_out = out_min_3rd;

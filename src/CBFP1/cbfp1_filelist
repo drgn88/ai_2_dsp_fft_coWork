@@ -1,0 +1,10 @@
+./cbfp1.sv
+./tb_cbfp1.sv
+./shift_reg.sv
+./mag_detect_cbfp1.sv
+./cu_cbfp1.sv
+./min_detect_cbfp1.sv
+./top_bit_shift_cbfp1.sv
+./bit_shift_cbfp1.sv
+./min_2in.sv
+./min_8in_cbfp1.sv
