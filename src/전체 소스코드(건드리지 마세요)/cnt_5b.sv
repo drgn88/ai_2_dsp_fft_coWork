@@ -33,6 +33,9 @@ module cnt_5b (
 		else if(valid) begin
 			cnt_ctrl <= cnt_ctrl + 1;
 		end
+		else begin
+			cnt_ctrl <= 0;
+		end
 	end
 
 endmodule
