@@ -47,7 +47,7 @@ module cnt_1b_fsm (
 				sel_next = 0;
 				cnt_next = cnt_reg + 1;
 				if(alert_mod10) begin
-					next_state <= CNT;
+					next_state = CNT;
 				end
 				else if(cnt_reg == 3) begin
 					next_state = IDLE;

@@ -14,7 +14,7 @@ module module0 (
 
 
 	//MOD00
-	logic w_lert_mod01;
+	logic w_alert_mod01;
 	logic signed [9:0] w_dout_R_add_00 [0:15];
 	logic signed [9:0] w_dout_Q_add_00 [0:15];
 	logic signed [9:0] w_dout_R_sub_00 [0:15];
