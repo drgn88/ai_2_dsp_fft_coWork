@@ -1,73 +1,84 @@
 `timescale 1ns / 1ps
 
-module tb_index_reorder;
+module tb_index_reorder_array;
 
-    localparam IDX_WIDTH = 9;
+    // DUT (Device Under Test)의 파라미터와 동일하게 설정
+    localparam IDX_WIDTH = 9;  // 각 인덱스의 비트 폭 (예: 512개 인덱스를 위해 9비트)
+    localparam NUM       = 16; // 한 번에 처리할 인덱스 데이터의 개수 (DEPTH 대신 NUM 사용)
+    localparam CLK_PERIOD = 10; // 클럭 주기 10ns
 
-    reg  [IDX_WIDTH-1:0] original_idx;
-    wire [IDX_WIDTH-1:0] reorder_idx;
+    // 테스트벤치 신호 선언
+    logic clk;
+    logic rstn;
+    logic en; // Enable 신호
+    logic [IDX_WIDTH-1:0] original_idx [NUM-1:0];
+    logic [IDX_WIDTH-1:0] reorder_idx  [NUM-1:0];
 
+    // DUT 인스턴스화
     index_reorder #(
-        .IDX_WIDTH(IDX_WIDTH)
+        .IDX_WIDTH(IDX_WIDTH),
+        .NUM(NUM)
     ) u_index_reorder (
+        .en(en),
         .original_idx(original_idx),
         .reorder_idx(reorder_idx)
     );
 
+    integer i; // 루프 변수
+
+    // 클럭 생성
     initial begin
-        $display("--- Index Reorder Testbench Start ---");
-        $display("IDX_WIDTH = %0d", IDX_WIDTH);
-        $display("-------------------------------------");
-        $display("Time | Original_Idx (Dec) | Original_Idx (Bin) | Reorder_Idx (Dec) | Reorder_Idx (Bin)");
-        $display("------------------------------------------------------------------------------------");
+        clk = 0;
+        forever #(CLK_PERIOD/2) clk = ~clk;
+    end
 
-        // 테스트 케이스 1: 최소값 (0)
-        original_idx = 0;
-        #10;
-        $display("%0t | %0d                 | %9b            | %0d               | %9b",
-                 $time, original_idx, original_idx, reorder_idx, reorder_idx);
+    initial begin
+        // 1. 초기화 및 리셋
+        rstn = 1'b0; // 리셋 활성화
+        en   = 1'b0; // Enable 비활성화
+        for (i = 0; i < NUM; i = i + 1) begin
+            original_idx[i] = 0;
+        end
+        # (CLK_PERIOD * 2); // 2클럭 동안 리셋 유지
 
-        // 테스트 케이스 2: 최대값 (511)
-        original_idx = (1 << IDX_WIDTH) - 1; // 2^IDX_WIDTH - 1
-        #10;
-        $display("%0t | %0d                 | %9b            | %0d               | %9b",
-                 $time, original_idx, original_idx, reorder_idx, reorder_idx);
+        rstn = 1'b1; // 리셋 비활성화
+        # (CLK_PERIOD); // 리셋 해제 후 1클럭 대기
 
-        // 테스트 케이스 3: 특정 값 (예: 1)
-        original_idx = 1; // 이진수 000000001
-        #10;
-        $display("%0t | %0d                 | %9b            | %0d               | %9b",
-                 $time, original_idx, original_idx, reorder_idx, reorder_idx);
+        // 2. en=0 상태에서 데이터 변화
+        for (i = 0; i < NUM; i = i + 1) begin
+            original_idx[i] = i; // 입력은 변경
+        end
+        @(posedge clk);
+        // 이 상태에서 reorder_idx는 모두 0이 될 것으로 예상됩니다.
 
-        // 테스트 케이스 4: 특정 값 (예: 256)
-        original_idx = 256; // 이진수 100000000
-        #10;
-        $display("%0t | %0d                 | %9b            | %0d               | %9b",
-                 $time, original_idx, original_idx, reorder_idx, reorder_idx);
+        // 3. en=1 상태에서 데이터 변화 (비트 역순)
+        en = 1'b1; // Enable 활성화
+        # (CLK_PERIOD); 
 
-        // 테스트 케이스 5: 임의의 중간 값 (예: 90)
-        original_idx = 90; // 이진수 001011010
-        #10;
-        $display("%0t | %0d                 | %9b            | %0d               | %9b",
-                 $time, original_idx, original_idx, reorder_idx, reorder_idx);
+        // 새로운 데이터 입력
+        for (i = 0; i < NUM; i = i + 1) begin
+            original_idx[i] = $urandom_range(0, (1 << IDX_WIDTH) - 1); // 랜덤 값
+        end
+        @(posedge clk);
+        // 이 상태에서 reorder_idx는 original_idx의 비트 역순 값이 될 것으로 예상됩니다.
 
-        // 테스트 케이스 6: 임의의 중간 값 (예: 172 - 위 90의 비트 역순)
-        original_idx = 172; // 이진수 010110100
-        #10;
-        $display("%0t | %0d                 | %9b            | %0d               | %9b",
-                 $time, original_idx, original_idx, reorder_idx, reorder_idx);
-        
-        // 추가적인 테스트 케이스 (선택 사항)
-        for (integer k = 0; k < 10; k = k + 1) begin
-            original_idx = $urandom_range(0, (1 << IDX_WIDTH) - 1); // 랜덤 값
-            #10;
-            $display("%0t | %0d                 | %9b            | %0d               | %9b",
-                     $time, original_idx, original_idx, reorder_idx, reorder_idx);
+        // 4. en=0으로 다시 변경
+        en = 1'b0; // Enable 비활성화
+        # (CLK_PERIOD);
+        // 이 상태에서 reorder_idx는 다시 모두 0이 될 것으로 예상됩니다.
+
+        // 5. 추가적인 랜덤 테스트 사이클 (en=1 상태)
+        repeat (3) begin
+            en = 1'b1;
+            for (i = 0; i < NUM; i = i + 1) begin
+                original_idx[i] = $urandom_range(0, (1 << IDX_WIDTH) - 1);
+            end
+            @(posedge clk);
+            # (CLK_PERIOD * 2); 
+            en = 1'b0; 
+            # (CLK_PERIOD);
         end
 
-
-        $display("-------------------------------------");
-        $display("--- Index Reorder Testbench End ---");
         $finish; // 시뮬레이션 종료
     end
 
