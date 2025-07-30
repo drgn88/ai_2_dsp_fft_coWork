@@ -26,8 +26,7 @@ module index_reorder #(
             for (k = 0; k < NUM; k = k + 1)
             reorder_idx[k] = temp_reorder_idx[k];
         end else begin
-for(k=0; k<NUM; k=k+1)
-            reorder_idx[k] = 0;
+            for (k = 0; k < NUM; k = k + 1) reorder_idx[k] = 0;
         end
     end
 endmodule
