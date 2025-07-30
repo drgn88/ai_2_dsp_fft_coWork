@@ -18,7 +18,13 @@ module module1 (
     output logic signed [11:0] dout_Q2_add [7:0],
     output logic signed [11:0] dout_Q2_sub [7:0],
 
-	output logic alert_cbfp1
+	output logic alert_cbfp1,
+
+	output logic cbfp1_mem_push,
+    output logic [4:0] scale_fac_1st_add,
+    output logic [4:0] scale_fac_1st_sub,
+    output logic [4:0] scale_fac_2nd_add,
+    output logic [4:0] scale_fac_2nd_sub
 );
 
 /////////////////////////////////////////////////////////////////////////////
@@ -161,7 +167,13 @@ module module1 (
     .dout_Q2_add(dout_Q2_add),
     .dout_Q2_sub(dout_Q2_sub),
 
-	.alert_cbfp1(alert_cbfp1)
+	.alert_cbfp1(alert_cbfp1),
+
+	.cbfp1_mem_push(cbfp1_mem_push),
+    .scale_fac_1st_add(scale_fac_1st_add),
+    .scale_fac_1st_sub(scale_fac_1st_sub),
+    .scale_fac_2nd_add(scale_fac_2nd_add),
+    .scale_fac_2nd_sub(scale_fac_2nd_sub)
 	);
 
 endmodule

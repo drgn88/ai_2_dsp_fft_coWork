@@ -12,9 +12,12 @@ module cbfp0 (
 
 	output logic signed [10:0] dout_R_CBFP [0:15],
 	output logic signed [10:0] dout_Q_CBFP [0:15],
-	output logic valid_mod1
+	output logic valid_mod1,
+
+	output logic [4:0] cbfp0_scale_fac,
+	output logic cbfp0_mem_push
 );
-	
+
 	// Internal Control Signal
 	logic w_mux_sel;
 	logic w_mag_en;
@@ -22,6 +25,23 @@ module cbfp0 (
 	logic w_min_fin_en;
 	logic w_bit_shift_en;
 
+
+	logic [4:0] w_scaling_fac;
+///////////////////////////////////////////////////////////////////////////////////////
+					//CBFP0_INDEX_STORE
+///////////////////////////////////////////////////////////////////////////////////////
+	always_ff @( posedge clk or negedge rstn ) begin : push_mem_cbfp0_make
+		if(!rstn) begin
+			cbfp0_mem_push <= 0;
+		end
+		else begin
+			cbfp0_mem_push <= w_min_fin_en;
+		end
+	end
+
+	assign cbfp0_scale_fac = w_scaling_fac;
+	
+	
 	cu_cbfp0 U_CU_CBFP(
 	.clk(clk),
 	.rstn(rstn),
@@ -154,7 +174,7 @@ module cbfp0 (
 	.dout_q(min_out_Q)
 	);
 
-	logic [4:0] w_scaling_fac;
+	
 
 	min_detect_4in #(
 	.LZC_WIDTH(5)

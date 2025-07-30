@@ -205,14 +205,16 @@ module mod2_2 (
 ////////////////////////////////////////////////////////////////////////////////////////
 	logic sat_en;
 
+	assign alert_cbfp2 = sat_en;
+
 	always_ff @( posedge clk or negedge rstn ) begin : make_CTRL_SINGAL
 		if(!rstn) begin
 			sat_en <= 0;
-			alert_cbfp2 <= 0;
+			//alert_cbfp2 <= 0;
 		end
 		else begin
 			sat_en <= alert_mod21;
-			alert_cbfp2 <= sat_en;
+			//alert_cbfp2 <= sat_en;
 		end
 	end
 	

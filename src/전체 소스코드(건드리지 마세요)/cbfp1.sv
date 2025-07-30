@@ -25,7 +25,13 @@ module cbfp1 (
     output logic signed [11:0] dout_Q2_add [7:0],
     output logic signed [11:0] dout_Q2_sub [7:0],
 
-	output logic alert_cbfp1
+	output logic alert_cbfp1,
+
+    output logic cbfp1_mem_push,
+    output logic [4:0] scale_fac_1st_add,
+    output logic [4:0] scale_fac_1st_sub,
+    output logic [4:0] scale_fac_2nd_add,
+    output logic [4:0] scale_fac_2nd_sub
 );
 
 //////////////////////////////////////////////////////
@@ -34,6 +40,17 @@ module cbfp1 (
 
 	logic w_mag_en;
 	logic w_min_en;
+    logic w_push_temp;
+
+    logic [4:0] min_out_1st_add;
+    logic [4:0] min_out_1st_sub;
+    logic [4:0] min_out_2nd_add;
+    logic [4:0] min_out_2nd_sub;
+
+    assign scale_fac_1st_add = min_out_1st_add;
+    assign scale_fac_1st_sub = min_out_1st_sub;
+    assign scale_fac_2nd_add = min_out_2nd_add;
+    assign scale_fac_2nd_sub = min_out_2nd_sub;
 
 	cu_cbfp1 CU_CBFP1(
     .clk(clk),
@@ -44,6 +61,18 @@ module cbfp1 (
     .min_en(w_min_en),
     .valid_mod1(alert_cbfp1)
 	);
+
+    always_ff @( posedge clk or negedge rstn ) begin : cbfp1_mem_push_make
+        if(!rstn) begin
+            w_push_temp <= 0;
+            cbfp1_mem_push <= 0;
+        end
+        else begin
+            w_push_temp <= w_min_en;
+            cbfp1_mem_push <= w_push_temp;
+        end
+    end
+
 
 //////////////////////////////////////////////////////
 //			SHIFT_REG_3CLK							//
@@ -165,8 +194,7 @@ module cbfp1 (
 //							MIN						//
 //////////////////////////////////////////////////////
 
-	logic [4:0] min_out_1st_add;
-    logic [4:0] min_out_1st_sub;
+	
 
 	min_detect_cbfp1 #(
     .LZC_WIDTH(5)  //msb 개수 비트폭
@@ -184,8 +212,7 @@ module cbfp1 (
     .min_out_sub(min_out_1st_sub)
 	);
 
-	logic [4:0] min_out_2nd_add;
-    logic [4:0] min_out_2nd_sub;
+	
 
 	min_detect_cbfp1 #(
     .LZC_WIDTH(5)  //msb 개수 비트폭

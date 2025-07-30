@@ -9,7 +9,10 @@ module module0 (
 
 	output logic signed [10:0] dout_R [0:15],
 	output logic signed [10:0] dout_Q [0:15],
-	output logic valid_mod1
+	output logic valid_mod1,
+
+	output logic [4:0] cbfp0_scale_fac,
+	output logic cbfp0_mem_push
 );
 
 
@@ -104,7 +107,10 @@ module module0 (
 
 	.dout_R_CBFP(dout_R),
 	.dout_Q_CBFP(dout_Q),
-	.valid_mod1(valid_mod1)
+	.valid_mod1(valid_mod1),
+
+	.cbfp0_scale_fac(cbfp0_scale_fac),
+	.cbfp0_mem_push(cbfp0_mem_push)
 	);
 	
 endmodule
