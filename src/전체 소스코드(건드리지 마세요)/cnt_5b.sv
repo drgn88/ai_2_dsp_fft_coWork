@@ -27,11 +27,14 @@ module cnt_5b (
 );
 	
 	always_ff @( posedge clk or negedge rstn ) begin : make_ctrl_signal
-		if(!rstn || !valid) begin
+		if(!rstn) begin
 			cnt_ctrl <= 0;
 		end
 		else if(valid) begin
 			cnt_ctrl <= cnt_ctrl + 1;
+		end
+		else begin
+			cnt_ctrl <= 0;
 		end
 	end
 

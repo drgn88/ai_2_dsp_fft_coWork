@@ -64,21 +64,23 @@ module cu_mod0_0 (
 	
 	logic [4:0] w_cnt_ctrl;
 
+	assign bf_en = w_cnt_ctrl[4];
+
 	cnt_5b U_CNT_5B(
 	.clk(clk),
-	.rstn(rstn),
+	.rstn(rstn | valid),
 	.valid(valid),
 	
 	.cnt_ctrl(w_cnt_ctrl)
 	);
 
-	bf2i_ctrl U_BF2I_CTRL_00(
-	.clk(clk),
-	.rstn(rstn),
-	.cnt_en(w_cnt_ctrl[4]),
+	// bf2i_ctrl U_BF2I_CTRL_00(
+	// .clk(clk),
+	// .rstn(rstn),
+	// .cnt_en(w_cnt_ctrl[4]),
 
-	.bf_en(bf_en)
-	);
+	// .bf_en(bf_en)
+	// );
 
 	ctrl_mod0_fac8_0 #(
 	.CNT_WIDTH(4) // 16카운트 
@@ -86,7 +88,7 @@ module cu_mod0_0 (
 	.clk(clk),
 	.rstn(rstn),
 	// .en(w_cnt_ctrl[4]),
-	.en(bf_en),
+	.en(w_cnt_ctrl[4]),
 
 	.valid_fac8_0(valid_fac8_0),
 	.alert_mod01(alert_mod01)
