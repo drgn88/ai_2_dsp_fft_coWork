@@ -1,0 +1,2 @@
+vcs -kdb -full64 -sverilog -f cos_in_gen_filelist -debug_all -o simv_rrc
+./simv_rrc -verdi &
