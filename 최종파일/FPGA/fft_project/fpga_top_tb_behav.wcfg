@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fpga_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fpga_top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2911600fs"></ZoomStartTime>
+      <ZoomEndTime time="3170401fs"></ZoomEndTime>
+      <Cursor1Time time="2920000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="252"></NameColumnWidth>
+      <ValueColumnWidth column_width="122"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="48" />
+   <wvobject fp_name="/fpga_top_tb/clk_p" type="logic">
+      <obj_property name="ElementShortName">clk_p</obj_property>
+      <obj_property name="ObjectShortName">clk_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/clk_n" type="logic">
+      <obj_property name="ElementShortName">clk_n</obj_property>
+      <obj_property name="ObjectShortName">clk_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_CLK_WIZARD/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_COS_IN_GEN/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_COS_IN_GEN/dout_R" type="array">
+      <obj_property name="ElementShortName">dout_R[15:0][8:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_R[15:0][8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_COS_IN_GEN/dout_Q" type="array">
+      <obj_property name="ElementShortName">dout_Q[15:0][8:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_Q[15:0][8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_FFT_TOP/dout_R_reorder" type="array">
+      <obj_property name="ElementShortName">dout_R_reorder[0:511][12:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_R_reorder[0:511][12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_FFT_TOP/dout_Q_reorder" type="array">
+      <obj_property name="ElementShortName">dout_Q_reorder[0:511][12:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_Q_reorder[0:511][12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_FFT_TOP/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_REG_OUT/reg_data_R" type="array">
+      <obj_property name="ElementShortName">reg_data_R[0:31][0:15][12:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_data_R[0:31][0:15][12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_REG_OUT/reg_data_Q" type="array">
+      <obj_property name="ElementShortName">reg_data_Q[0:31][0:15][12:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_data_Q[0:31][0:15][12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_REG_OUT/dout_R" type="array">
+      <obj_property name="ElementShortName">dout_R[0:15][12:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_R[0:15][12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_REG_OUT/dout_Q" type="array">
+      <obj_property name="ElementShortName">dout_Q[0:15][12:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_Q[0:15][12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/top_done" type="logic">
+      <obj_property name="ElementShortName">top_done</obj_property>
+      <obj_property name="ObjectShortName">top_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in0" type="array">
+      <obj_property name="ElementShortName">probe_in0[0:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in0[0:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in1" type="array">
+      <obj_property name="ElementShortName">probe_in1[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in1[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in2" type="array">
+      <obj_property name="ElementShortName">probe_in2[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in2[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in3" type="array">
+      <obj_property name="ElementShortName">probe_in3[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in3[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in4" type="array">
+      <obj_property name="ElementShortName">probe_in4[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in4[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in5" type="array">
+      <obj_property name="ElementShortName">probe_in5[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in5[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in6" type="array">
+      <obj_property name="ElementShortName">probe_in6[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in6[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in7" type="array">
+      <obj_property name="ElementShortName">probe_in7[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in7[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in8" type="array">
+      <obj_property name="ElementShortName">probe_in8[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in8[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in9" type="array">
+      <obj_property name="ElementShortName">probe_in9[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in9[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in10" type="array">
+      <obj_property name="ElementShortName">probe_in10[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in10[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in11" type="array">
+      <obj_property name="ElementShortName">probe_in11[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in11[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in12" type="array">
+      <obj_property name="ElementShortName">probe_in12[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in12[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in13" type="array">
+      <obj_property name="ElementShortName">probe_in13[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in13[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in14" type="array">
+      <obj_property name="ElementShortName">probe_in14[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in14[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in15" type="array">
+      <obj_property name="ElementShortName">probe_in15[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in15[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in16" type="array">
+      <obj_property name="ElementShortName">probe_in16[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in16[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in17" type="array">
+      <obj_property name="ElementShortName">probe_in17[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in17[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in18" type="array">
+      <obj_property name="ElementShortName">probe_in18[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in18[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in19" type="array">
+      <obj_property name="ElementShortName">probe_in19[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in19[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in20" type="array">
+      <obj_property name="ElementShortName">probe_in20[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in20[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in21" type="array">
+      <obj_property name="ElementShortName">probe_in21[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in21[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in22" type="array">
+      <obj_property name="ElementShortName">probe_in22[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in22[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in23" type="array">
+      <obj_property name="ElementShortName">probe_in23[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in23[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in24" type="array">
+      <obj_property name="ElementShortName">probe_in24[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in24[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in25" type="array">
+      <obj_property name="ElementShortName">probe_in25[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in25[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in26" type="array">
+      <obj_property name="ElementShortName">probe_in26[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in26[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in27" type="array">
+      <obj_property name="ElementShortName">probe_in27[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in27[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in28" type="array">
+      <obj_property name="ElementShortName">probe_in28[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in28[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in29" type="array">
+      <obj_property name="ElementShortName">probe_in29[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in29[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in30" type="array">
+      <obj_property name="ElementShortName">probe_in30[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in30[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in31" type="array">
+      <obj_property name="ElementShortName">probe_in31[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in31[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_top_tb/UUT/U_VIO/probe_in32" type="array">
+      <obj_property name="ElementShortName">probe_in32[12:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_in32[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
