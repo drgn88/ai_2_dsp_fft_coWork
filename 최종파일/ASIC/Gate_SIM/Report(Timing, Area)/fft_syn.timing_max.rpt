@@ -1,0 +1,141 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'FFT_TOP' contains 22 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FFT_TOP
+Version: V-2023.12-SP5-4
+Date   : Mon Aug  4 17:41:16 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TT_0P80V_0P00V_0P00V_0P00V_25C   Library: GF22FDX_SC7P5T_116CPP_BASE_CSC20L_TT_0P80V_0P00V_0P00V_0P00V_25C
+Wire Load Model Mode: enclosed
+
+  Startpoint: MODULE_0/U_MOD02/U_CU_02/MUL_TWF_CTRL_02/addr_reg_reg_4_
+              (rising edge-triggered flip-flop clocked by cnt_clk)
+  Endpoint: MODULE_0/U_MOD02/MUL_FAC8_2_02/dout_R_add_reg_1__22_
+            (rising edge-triggered flip-flop clocked by cnt_clk)
+  Path Group: cnt_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock cnt_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  MODULE_0/U_MOD02/U_CU_02/MUL_TWF_CTRL_02/addr_reg_reg_4_/CLK (SC7P5T_SDFFRQX4_S_CSC20L)
+                                                          0.00       0.00 r
+  MODULE_0/U_MOD02/U_CU_02/MUL_TWF_CTRL_02/addr_reg_reg_4_/Q (SC7P5T_SDFFRQX4_S_CSC20L)
+                                                         56.93      56.93 r
+  MODULE_0/U_MOD02/U_CU_02/MUL_TWF_CTRL_02/addr[4] (mul_twf_ctrl_OFFSET128_GROUP_SIZE4_ADDRESS_WIDTH9_DATA_NUM16)
+                                                          0.00      56.93 r
+  MODULE_0/U_MOD02/U_CU_02/addr[4] (cu_mod0_2)            0.00      56.93 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/addr[4] (mul_fac8_2_WIDTH14_TWF_WIDTH9_DOUT_WIDTH23_DEPTH16_ADDR_WIDTH9_OFFSET64)
+                                                          0.00      56.93 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U118/Z (SC7P5T_BUFX8_A_CSC20L)
+                                                         30.07      87.00 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/twf_gen_1__U_TWF_GEN/addr[4] (rom_twf_gen_ROM_DEPTH512_TWF_WIDTH9_ADDR_WIDTH9_OFFSET64_14)
+                                                          0.00      87.00 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/twf_gen_1__U_TWF_GEN/U75/Z (SC7P5T_INVX2_CSC20L)
+                                                         25.15     112.16 f
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/twf_gen_1__U_TWF_GEN/U32/Z (SC7P5T_INVX6_CSC20L)
+                                                         18.75     130.91 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/twf_gen_1__U_TWF_GEN/U79/Z (SC7P5T_NR2IAX2_CSC20L)
+                                                         26.14     157.05 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/twf_gen_1__U_TWF_GEN/U80/Z (SC7P5T_INVX2_CSC20L)
+                                                         22.09     179.14 f
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/twf_gen_1__U_TWF_GEN/U148/Z (SC7P5T_NR2X2_MR_CSC20L)
+                                                         14.75     193.89 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/twf_gen_1__U_TWF_GEN/U13/Z (SC7P5T_INVX1_CSC20L)
+                                                          8.83     202.72 f
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/twf_gen_1__U_TWF_GEN/U21/Z (SC7P5T_AOI31X1_CSC20L)
+                                                         18.90     221.62 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/twf_gen_1__U_TWF_GEN/U27/Z (SC7P5T_ND3X3_CSC20L)
+                                                         30.78     252.40 f
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/twf_gen_1__U_TWF_GEN/twiddle_fac_Q_add[4] (rom_twf_gen_ROM_DEPTH512_TWF_WIDTH9_ADDR_WIDTH9_OFFSET64_14)
+                                                          0.00     252.40 f
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3652/Z (SC7P5T_AO22IA1A2X4_P_CSC20L)
+                                                         46.82     299.22 f
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U12685/Z (SC7P5T_INVX2_CSC20L)
+                                                         29.13     328.34 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U10455/Z (SC7P5T_BUFX2_A_CSC20L)
+                                                         37.41     365.76 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U10456/Z (SC7P5T_INVX2_CSC20L)
+                                                         25.18     390.93 f
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3651/Z (SC7P5T_AOI22X2_CSC20L)
+                                                         23.94     414.88 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/DP_OP_374J13_152_3804_U247/Z (SC7P5T_MUXI2X1_CSC20L)
+                                                         18.76     433.63 f
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U20225/S (SC7P5T_FAX1_A_CSC20L)
+                                                         67.61     501.25 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U4070/S (SC7P5T_FAX2_A_CSC20L)
+                                                         56.10     557.35 f
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U4069/S (SC7P5T_FAX2_A_CSC20L)
+                                                         55.91     613.26 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3917/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         36.04     649.30 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U20424/CO (SC7P5T_FAX1_A_CSC20L)
+                                                         44.10     693.40 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U2777/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         36.03     729.43 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U2776/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.45     762.87 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3085/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.44     796.31 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3084/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.44     829.76 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3650/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.44     863.20 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3649/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.44     896.64 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3919/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.44     930.08 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3914/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.44     963.52 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U4068/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.44     996.97 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U4067/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.44    1030.41 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3075/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.44    1063.85 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3080/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.44    1097.29 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3648/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.44    1130.73 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3647/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         33.44    1164.18 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U3646/CO (SC7P5T_FAX2_A_CSC20L)
+                                                         31.69    1195.87 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U20420/Z (SC7P5T_OA22IA1A2X1_CSC20L)
+                                                         27.08    1222.94 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U4757/Z (SC7P5T_AO22IA1A2X1_CSC20L)
+                                                         29.27    1252.21 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U20421/Z (SC7P5T_AO22IA1A2X1_CSC20L)
+                                                         27.59    1279.80 r
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U5941/Z (SC7P5T_INVX1_CSC20L)
+                                                          8.78    1288.59 f
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/U402/Z (SC7P5T_AN2X2_CSC20L)
+                                                         14.69    1303.28 f
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/dout_R_add_reg_1__22_/D (SC7P5T_SDFFRQX1_A_CSC20L)
+                                                          0.00    1303.28 f
+  data arrival time                                               1303.28
+
+  clock cnt_clk (rise edge)                            1400.00    1400.00
+  clock network delay (ideal)                             0.00    1400.00
+  clock uncertainty                                     -50.00    1350.00
+  MODULE_0/U_MOD02/MUL_FAC8_2_02/dout_R_add_reg_1__22_/CLK (SC7P5T_SDFFRQX1_A_CSC20L)
+                                                          0.00    1350.00 r
+  library setup time                                    -46.37    1303.63
+  data required time                                              1303.63
+  --------------------------------------------------------------------------
+  data required time                                              1303.63
+  data arrival time                                              -1303.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.35
+
+
+1

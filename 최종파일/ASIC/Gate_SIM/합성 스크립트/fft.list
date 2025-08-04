@@ -1,0 +1,4 @@
+lappend search_path  ./src
+set net_list [glob ./src/*.sv]
+
+analyze -format sverilog -library WORK $net_list
