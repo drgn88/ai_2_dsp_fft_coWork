@@ -1,0 +1,312 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Aug  5 08:43:25 2025
+# Process ID: 9600
+# Current directory: C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5468 C:\Users\chw65\Desktop\KDT_BT_Camp\github_upload\ai-btcamp-TIL\DSP\Project\깃허브_공동작업\최종파일\FPGA\fft_project\fft_project.xpr
+# Log file: C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/vivado.log
+# Journal file: C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project\vivado.jou
+# Running On: clv_thinkpad, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 33827 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project'
+WARNING: [Board 49-26] cannot add Board Part avnet-tria:auboard_15p:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/boards/aub15p/1.1/board.xml as part xcau15p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/kccistc/Desktop/FPGA/fft_project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2020.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'vio_1' is locked:
+* IP definition 'VIO (Virtual Input/Output) (3.0)' for IP 'vio_1' (customized with software release 2020.2) has a different revision in the IP Catalog.
+INFO: [Project 1-230] Project 'fft_project.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 1570.871 ; gain = 441.043
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {c:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/±eCaºe_°øμ¿A÷/AO~ÆAAI/FPGA/fft_project/fft_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_ c:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/±eCaºe_°øμ¿A÷/AO~ÆAAI/FPGA/fft_project/fft_project.srcs/sources_1/ip/vio_1/vio_}] -log ip_upgrade.log
+WARNING: [Coretcl 2-176] No IPs found
+ERROR: [Common 17-69] Command failed: No IP specified.  Please specify IP with 'objects'
+upgrade_ip [get_ips  {c:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/±eCaºe_°øμ¿A÷/AO~ÆAAI/FPGA/fft_project/fft_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_ c:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/±eCaºe_°øμ¿A÷/AO~ÆAAI/FPGA/fft_project/fft_project.srcs/sources_1/ip/vio_1/vio_}] -log ip_upgrade.log
+WARNING: [Coretcl 2-176] No IPs found
+ERROR: [Common 17-69] Command failed: No IP specified.  Please specify IP with 'objects'
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fpga_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2023.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fpga_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.sim/sim_1/behav/xsim/ran_i_dat_stu.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.sim/sim_1/behav/xsim/ran_q_dat_stu.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.sim/sim_1/behav/xsim/cos_i_dat.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.sim/sim_1/behav/xsim/cos_q_dat.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj fpga_top_tb_vlog.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.gen/sources_1/ip/vio_1/sim/vio_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vio_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/BF2I.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BF2I
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/BF2I_1bundle.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BF2I_1bundle
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/BF2I_2bundle.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BF2I_2bundle
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/BF2I_4bundle.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BF2I_4bundle
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/BF2I_8bundle.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BF2I_8bundle
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/FFT_TOP.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFT_TOP
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/Desktop/FPGA_TOP.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga_top
+INFO: [VRFC 10-311] analyzing module reg_out
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/TOP_cbfp2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_cbfp2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/addr_gen_mod12.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/bit_shift.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shift
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/bit_shift_cbfp1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shift_cbfp1
+ERROR: [Common 17-145] codecvt to wstring conversion failed '1'
+ERROR: [Common 17-145] codecvt to wstring conversion failed '1'
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/bit_shift_ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shift_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cbfp0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cbfp0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cbfp1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cbfp1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cbfp2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cbfp2
+INFO: [VRFC 10-311] analyzing module bit_shift_cbfp2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cnt_1b_fsm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnt_1b_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cnt_2b.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnt_2b
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cnt_3b_fsm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnt_3b_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cnt_4b_fsm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnt_4b_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cnt_5b.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnt_5b
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/Desktop/cos_in_gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cos_in_gen
+INFO: [VRFC 10-311] analyzing module cos_cu
+INFO: [VRFC 10-311] analyzing module cnt_6b
+INFO: [VRFC 10-311] analyzing module cos_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/ctrl_mod0_fac8_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_mod0_fac8_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/ctrl_mod0_fac8_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_mod0_fac8_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/ctrl_mod1_fac8_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_mod1_fac8_0
+ERROR: [Common 17-145] codecvt to wstring conversion failed '1'
+ERROR: [Common 17-145] codecvt to wstring conversion failed '1'
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/ctrl_mod1_fac8_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_mod1_fac8_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/ctrl_mux_shift_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_mux_shift_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cu_cbfp0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu_cbfp0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cu_cbfp1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu_cbfp1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cu_mod0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu_mod0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cu_mod0_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu_mod0_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cu_mod0_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu_mod0_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cu_mod1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu_mod1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cu_mod1_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu_mod1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/cu_mod1_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu_mod1_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/fac8_0_mod20.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fac8_0_mod20
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/fac8_1_181j.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fac8_1_181j
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/fac8_1_m181j.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fac8_1_m181j
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/fac8_1_mj.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fac8_1_mj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/full_512_mem_ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_512_mem_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/index_sum.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module index_sum
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mag_ctrl_cbfp0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mag_ctrl_cbfp0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mag_detect.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mag_detect
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mag_detect_cbf1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mag_detect_cbfp1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mem_cbfp0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_cbfp0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mem_cbfp1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_cbfp1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/min_2in.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module min_2in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/min_4s_ctrl_cbfp0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module min_4s_ctrl_cbfp0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/min_8in_cbfp1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module min_8in_cbfp1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/min_detect_16in.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module min_detect_16in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/min_detect_4in.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module min_detect_4in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/min_detect_cbfp1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module min_detect_cbfp1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/min_fin_ctrl_cbfp0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module min_fin_ctrl_cbfp0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mod0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mod0_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod0_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mod0_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod0_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mod1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mod1_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mod1_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod1_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mod2_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod2_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mod2_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mod2_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod2_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/module0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/module1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/module2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mul_fac8_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fac8_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mul_fac8_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fac8_1
+ERROR: [Common 17-145] codecvt to wstring conversion failed '1'
+ERROR: [Common 17-145] codecvt to wstring conversion failed '1'
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mul_fac8_1_mod11.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fac8_1_mod11
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mul_fac8_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fac8_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mul_fac8_2_mod12.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_fac8_2_mod12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mul_twf_ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_twf_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mux_32_to_16.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_32_to_16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mux_sel_cbfp0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_sel_cbfp0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/mux_sel_ctrl_02.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_sel_ctrl_02
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/reorder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reorder
+INFO: [VRFC 10-311] analyzing module shift_reg_reorder
+INFO: [VRFC 10-311] analyzing module index_reorder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/rom_twf_gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_twf_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/saturate_16b.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module saturation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/shift_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/shift_reg16_mod11.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_reg16_mod11
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/shift_reg_cbfp.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_reg_cbfp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/top_bit_shift.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_bit_shift
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/top_bit_shift_cbfp1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_bit_shift_cbfp1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sources_1/imports/source/twf_rom_mod12.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module twf_rom_mod12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.srcs/sim_1/imports/TB/tb_FFT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga_top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1901.773 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '13' seconds
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.sim/sim_1/behav/xsim/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1901.773 ; gain = 3.379
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug  5 08:45:40 2025...

@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Aug  5 08:43:25 2025
+# Process ID: 9600
+# Current directory: C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5468 C:\Users\chw65\Desktop\KDT_BT_Camp\github_upload\ai-btcamp-TIL\DSP\Project\깃허브_공동작업\최종파일\FPGA\fft_project\fft_project.xpr
+# Log file: C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/vivado.log
+# Journal file: C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project\vivado.jou
+# Running On: clv_thinkpad, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 33827 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/깃허브_공동작업/최종파일/FPGA/fft_project/fft_project.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {c:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/±eCaºe_°øμ¿A÷/AO~ÆAAI/FPGA/fft_project/fft_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_ c:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/±eCaºe_°øμ¿A÷/AO~ÆAAI/FPGA/fft_project/fft_project.srcs/sources_1/ip/vio_1/vio_}] -log ip_upgrade.log
+upgrade_ip [get_ips  {c:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/±eCaºe_°øμ¿A÷/AO~ÆAAI/FPGA/fft_project/fft_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_ c:/Users/chw65/Desktop/KDT_BT_Camp/github_upload/ai-btcamp-TIL/DSP/Project/±eCaºe_°øμ¿A÷/AO~ÆAAI/FPGA/fft_project/fft_project.srcs/sources_1/ip/vio_1/vio_}] -log ip_upgrade.log
+launch_simulation
