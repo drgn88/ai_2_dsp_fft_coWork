@@ -1,0 +1,2 @@
+./fft_syn.v
+./tb_FFT_gate_sim.sv
